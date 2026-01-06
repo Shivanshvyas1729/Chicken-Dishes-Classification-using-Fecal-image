@@ -1,7 +1,9 @@
-from src.cnnClassifier.pipeline.prediction import PredictionPipeline
+from cnnClassifier.pipeline.prediction import PredictionPipeline
 
-print("Import OK")
+# 👇 put path of any test image here
+img_path = "test.jpg"
 
-# OPTIONAL: test prediction
-# img_path = "test.jpg"
-# print(PredictionPipeline(img_path).predict())
+pred = PredictionPipeline(img_path)
+result = pred.predict()
+
+print(result)
