@@ -13,4 +13,7 @@ joblib
 types-pyYAML
 Flask
 flask-cors
+mlflow==2.2.2
+dagshub
+dvc
 -e .
